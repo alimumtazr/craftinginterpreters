@@ -1,0 +1,11 @@
+class Point {
+  init(x, y) { this.x = x; this.y = y; }
+  sum() { return this.x + this.y; }
+}
+var p = Point(3, 4);
+print p.sum();      // expect: 7
+
+class Foo {
+  init() {}
+}
+print Foo().init(); // expect: Foo instance

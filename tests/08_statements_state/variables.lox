@@ -1,0 +1,13 @@
+var a = 1;
+var b = 2;
+print a + b;   // expect: 3
+
+var c;
+print c;       // expect: nil
+
+a = 5;
+print a;       // expect: 5
+
+var d = a = 10;  // assignment is an expression
+print a;       // expect: 10
+print d;       // expect: 10

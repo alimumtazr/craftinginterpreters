@@ -1,0 +1,4 @@
+class Eclair {
+  cook() { super.cook(); }
+}
+// expect error: Can't use 'super' in a class with no superclass.

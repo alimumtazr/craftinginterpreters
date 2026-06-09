@@ -1,0 +1,30 @@
+var i = 0;
+while (i < 3) { print i; i = i + 1; }
+// expect: 0
+// expect: 1
+// expect: 2
+
+for (var j = 0; j < 3; j = j + 1) print j;
+// expect: 0
+// expect: 1
+// expect: 2
+
+var a = 0;
+var temp;
+for (var b = 1; a < 100; b = temp + b) {
+  print a;
+  temp = a;
+  a = b;
+}
+// expect: 0
+// expect: 1
+// expect: 1
+// expect: 2
+// expect: 3
+// expect: 5
+// expect: 8
+// expect: 13
+// expect: 21
+// expect: 34
+// expect: 55
+// expect: 89

@@ -1,0 +1,19 @@
+class DevonshireCream {
+  serveOn() { return "Scones"; }
+}
+print DevonshireCream;   // expect: DevonshireCream
+
+class Bagel {}
+print Bagel();           // expect: Bagel instance
+
+class Box {}
+var b = Box();
+b.value = 42;
+print b.value;           // expect: 42
+b.value = b.value + 1;
+print b.value;           // expect: 43
+
+class Bacon {
+  eat() { print "Crunch crunch crunch!"; }
+}
+Bacon().eat();           // expect: Crunch crunch crunch!

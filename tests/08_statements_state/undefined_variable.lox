@@ -1,0 +1,1 @@
+print x; // expect error: Undefined variable 'x'.

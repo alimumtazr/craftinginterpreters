@@ -1,0 +1,18 @@
+print 1 + 2;          // expect: 3
+print 7 - 3;          // expect: 4
+print 4 * 5;          // expect: 20
+print 10 / 4;         // expect: 2.5
+print 2 + 3 * 4;      // expect: 14
+print (2 + 3) * 4;    // expect: 20
+print -5 + 3;         // expect: -2
+print 1 < 2;          // expect: true
+print 2 <= 2;         // expect: true
+print 3 > 4;          // expect: false
+print 1 == 1;         // expect: true
+print 1 != 2;         // expect: true
+print "a" == "b";     // expect: false
+print "foo" + "bar";  // expect: foobar
+print !true;          // expect: false
+print !nil;           // expect: true
+print !0;             // expect: false
+print !!"hi";         // expect: true

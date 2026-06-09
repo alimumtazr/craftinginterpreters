@@ -1,0 +1,13 @@
+if (true) print "yes"; else print "no";    // expect: yes
+if (false) print "yes"; else print "no";   // expect: no
+if (1 < 2) print "math works";              // expect: math works
+
+print true and "v";     // expect: v
+print false and "v";    // expect: false
+print false or "v";     // expect: v
+print true or "v";      // expect: true
+print nil or "default"; // expect: default
+
+var executed = false;
+false and (executed = true);  // right side must be short-circuited
+print executed;         // expect: false

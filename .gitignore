@@ -1,0 +1,23 @@
+# CMake out-of-source build directory
+/build/
+build*/
+
+# CMake artifacts (in case of an in-source configure)
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CTestTestfile.cmake
+*.cmake.stamp
+
+# Compiled binaries / objects
+*.exe
+*.obj
+*.o
+*.out
+*.exp
+*.lib
+*.pdb
+*.ilk
+
+# Test runner build artifact
+tests/lox_test.exe

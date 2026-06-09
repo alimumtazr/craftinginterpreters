@@ -1,0 +1,18 @@
+fun sayHi(first, last) {
+  print "Hi, " + first + " " + last + "!";
+}
+sayHi("Dear", "Reader");   // expect: Hi, Dear Reader!
+
+fun add(a, b) { return a + b; }
+print add(1, 2);           // expect: 3
+print add;                 // expect: <fn add>
+
+fun procedure() { print "side effect"; }
+var result = procedure();  // expect: side effect
+print result;              // expect: nil
+
+fun fib(n) {
+  if (n <= 1) return n;
+  return fib(n - 2) + fib(n - 1);
+}
+print fib(10);             // expect: 55

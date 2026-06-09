@@ -1,0 +1,13 @@
+var a = "global";
+{
+  var a = "block";
+  print a;     // expect: block
+}
+print a;       // expect: global
+
+var outer = "outer";
+{
+  var inner = "inner";
+  print outer; // expect: outer
+  print inner; // expect: inner
+}

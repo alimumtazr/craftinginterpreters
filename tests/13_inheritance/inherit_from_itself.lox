@@ -1,0 +1,2 @@
+class Oops < Oops {}
+// expect error: A class can't inherit from itself.
