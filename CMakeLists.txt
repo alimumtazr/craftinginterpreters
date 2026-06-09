@@ -15,8 +15,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 if(NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CONFIGURATION_TYPES)
   set(CMAKE_BUILD_TYPE "Release" CACHE STRING "Build type" FORCE)
 endif()
-
-# --- Interpreter executable 
+# Interpreter executable 
 # These are exactly the translation units that make up the interpreter.
 # (AstPrinter.cpp is an optional debug utility and is intentionally not
 # linked into the interpreter, matching how we build it by hand.)
